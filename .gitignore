@@ -1,6 +1,9 @@
 # Binaries
 bin/
 
+# Local venv configuration file
+pyvenv.cfg
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
