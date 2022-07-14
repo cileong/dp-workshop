@@ -8,16 +8,16 @@ def recursive_fib(n: int) -> int:
 
 
 def dp_fib(n: int) -> int:
-    memo = [0] * max(n, 2)
+    memo = [0] * max(n+1, 2)
     
     # Base case
     memo[0] = 0
     memo[1] = 1
 
-    for i in range(2, n):
+    for i in range(2, n+1):
         memo[i] = memo[i-1] + memo[i-2]
     
-    return memo[-1]
+    return memo[n]
 
 
 def optimised_dp_fib(n: int) -> int:
