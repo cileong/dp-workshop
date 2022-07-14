@@ -18,3 +18,10 @@ def dp_fib(n: int) -> int:
         memo[i] = memo[i-1] + memo[i-2]
     
     return memo[-1]
+
+
+def optimised_dp_fib(n: int) -> int:
+    a, b = 0, 1
+    for _ in range(n):
+        a, b = b, a+b
+    return a
