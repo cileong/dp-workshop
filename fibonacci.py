@@ -1,3 +1,18 @@
+"""
+The n-th Fibonacci Number Problem.
+
+Given a number n, compute the n-th term of the Fibonacci
+series. The n-th term of the Fibonacci series, fib(n)
+is defined by:
+
+fib(n) = {
+    0                      if n = 0,
+    1                      if n = 1,
+    fib(n-1) + fib(n-2)    otherwise.
+}
+"""
+
+
 def recursive_fib(n: int) -> int:
     if n == 0:
         return 0
